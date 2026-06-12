@@ -1,5 +1,5 @@
 function adicionarCarrinho(produto) {
-
+    console.log("Adicionar Produtos")
     let carrinho =
         JSON.parse(localStorage.getItem("carrinho"))
         || [];
