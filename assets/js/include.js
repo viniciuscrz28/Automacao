@@ -26,3 +26,8 @@ async function carregarComponentes() {
 
     atualizarContador();
 }
+
+document.addEventListener(
+    "DOMContentLoaded",
+    carregarComponentes
+);
