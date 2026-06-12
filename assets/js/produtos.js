@@ -19,4 +19,25 @@ const produtos = [
         descricao: "Soluções completas para automação de máquinas.",
         preco: 4890
     }
+
+    {
+        id: 3,
+        nome: "Painel Automatizado",
+        descricao: "Soluções completas para automação de máquinas.",
+        preco: 4890
+    }
+
+    {
+        id: 3,
+        nome: "Painel Automatizado",
+        descricao: "Soluções completas para automação de máquinas.",
+        preco: 4890
+    }
+
+    {
+        id: 3,
+        nome: "Painel Automatizado",
+        descricao: "Soluções completas para automação de máquinas.",
+        preco: 4890
+    }
 ];
