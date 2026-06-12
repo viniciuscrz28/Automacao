@@ -1,0 +1,26 @@
+.hero {
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.6),
+            rgba(0,0,0,.6)
+        ),
+
+        url("../img/banner-industria.jpg");
+
+    background-size: cover;
+
+    color: white;
+
+    padding: 120px 0;
+}
+
+.card {
+
+    transition: .3s;
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+}
