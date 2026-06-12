@@ -24,3 +24,53 @@
 
     transform: translateY(-8px);
 }
+
+body {
+
+    margin: 0;
+}
+
+.conteudo {
+
+    margin-top: 80px;
+
+    margin-left: 250px;
+
+    padding: 20px;
+}
+
+.sidebar {
+
+    position: fixed;
+
+    top: 70px;
+
+    left: 0;
+
+    width: 250px;
+
+    height: 100vh;
+
+    background: #1e293b;
+
+    color: white;
+}
+
+.sidebar ul {
+
+    list-style: none;
+
+    padding: 20px;
+}
+
+.sidebar li {
+
+    margin: 20px 0;
+}
+
+.sidebar a {
+
+    color: white;
+
+    text-decoration: none;
+}

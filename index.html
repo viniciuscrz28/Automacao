@@ -47,6 +47,7 @@
 <body>
 
 <div id="header"></div>
+<div id="sidebar"></div>
 
 <section class="hero text-center">
     <div class="container">
@@ -206,11 +207,28 @@
 </footer>
 
 <script>
-fetch('components/header.html')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('header').innerHTML = data;
-    });
+async function carregarComponentes() {
+
+    const header =
+        await fetch("include/header.html");
+
+    document
+        .getElementById("header")
+        .innerHTML =
+        await header.text();
+
+    const sidebar =
+        await fetch("include/sidebar.html");
+
+    document
+        .getElementById("sidebar")
+        .innerHTML =
+        await sidebar.text();
+
+    atualizarContador();
+}
+
+carregarComponentes();
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
