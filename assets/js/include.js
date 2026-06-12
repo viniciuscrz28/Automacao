@@ -32,5 +32,3 @@ async function carregarComponentes() {
 
     atualizarContador();
 }
-
-carregarComponentes();
