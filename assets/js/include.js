@@ -30,5 +30,13 @@ async function carregarComponentes() {
         .innerHTML =
         await sidebar.text();
 
+    const footer =
+        await fetch("include/footer.html");
+
+    document
+        .getElementById("footer")
+        .innerHTML =
+        await footer.text();
+
     atualizarContador();
 }
