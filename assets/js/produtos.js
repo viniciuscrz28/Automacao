@@ -111,3 +111,51 @@ const produtos = [
         preco: 120
     }
 ];
+
+
+const listaProdutos = document.getElementById("lista-produtos");
+
+produtos.forEach(produto => {
+
+    listaProdutos.innerHTML += `
+    
+        <div class="col-md-4">
+
+            <div class="card h-100">
+
+                <img src="img/produto${produto.id}.jpg"
+                    class="card-img-top"
+                    alt="${produto.nome}">
+
+                <div class="card-body d-flex flex-column">
+
+                    <h5 class="card-title">
+                        ${produto.nome}
+                    </h5>
+
+                    <p class="card-text">
+                        ${produto.descricao}
+                    </p>
+
+                    <h4 class="text-primary mt-auto">
+                        ${produto.preco.toLocaleString('pt-BR', {
+                            style: 'currency',
+                            currency: 'BRL'
+                        })}
+                    </h4>
+
+                    <button class="btn btn-primary w-100"
+                        onclick="adicionarCarrinho(${produto.id})">
+
+                        Adicionar ao Carrinho
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    `;
+});
