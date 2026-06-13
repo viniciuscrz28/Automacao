@@ -62,54 +62,6 @@ const produtos = [
         preco: 220
     },
 
-    {
-        id: 10,
-        nome: "Contator Industrial",
-        descricao: "Acionamento seguro de motores e cargas elétricas.",
-        preco: 340
-    },
-
-    {
-        id: 11,
-        nome: "Relé de Interface",
-        descricao: "Isolamento e acionamento de circuitos de comando.",
-        preco: 95
-    },
-
-    {
-        id: 12,
-        nome: "Encoder Incremental",
-        descricao: "Monitoramento de posição e velocidade em sistemas automatizados.",
-        preco: 790
-    },
-
-    {
-        id: 13,
-        nome: "Servomotor Industrial",
-        descricao: "Movimentação de alta precisão para aplicações industriais.",
-        preco: 5890
-    },
-
-    {
-        id: 14,
-        nome: "Módulo de Expansão para CLP",
-        descricao: "Ampliação do número de entradas e saídas do controlador.",
-        preco: 990
-    },
-
-    {
-        id: 15,
-        nome: "Botão de Emergência",
-        descricao: "Dispositivo de segurança para parada imediata do equipamento.",
-        preco: 75
-    },
-
-    {
-        id: 16,
-        nome: "Sinaleiro Industrial LED",
-        descricao: "Indicação visual do status operacional das máquinas.",
-        preco: 120
-    }
 ];
 
 
