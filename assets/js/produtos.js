@@ -119,43 +119,44 @@ produtos.forEach(produto => {
 
     listaProdutos.innerHTML += `
     
-        <div class="col-md-4">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
 
-            <div class="card h-100">
+    <div class="card h-100 shadow-sm">
 
-                <img src="img/produto${produto.id}.jpg"
-                    class="card-img-top"
-                    alt="${produto.nome}">
+        <img src="img/produto${produto.id}.jpg"
+            class="card-img-top"
+            alt="${produto.nome}"
+            style="height: 180px; object-fit: cover;">
 
-                <div class="card-body d-flex flex-column">
+        <div class="card-body d-flex flex-column">
 
-                    <h5 class="card-title">
-                        ${produto.nome}
-                    </h5>
+            <h5 class="card-title">
+                ${produto.nome}
+            </h5>
 
-                    <p class="card-text">
-                        ${produto.descricao}
-                    </p>
+            <p class="card-text">
+                ${produto.descricao}
+            </p>
 
-                    <h4 class="text-primary mt-auto">
-                        ${produto.preco.toLocaleString('pt-BR', {
-                            style: 'currency',
-                            currency: 'BRL'
-                        })}
-                    </h4>
+            <h4 class="text-primary mt-auto">
+                ${produto.preco.toLocaleString('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL'
+                })}
+            </h4>
 
-                    <button class="btn btn-primary w-100"
-                        onclick="adicionarCarrinho(${produto.id})">
+            <button class="btn btn-primary w-100"
+                onclick="adicionarCarrinho(${produto.id})">
 
-                        Adicionar ao Carrinho
+                Adicionar ao Carrinho
 
-                    </button>
-
-                </div>
-
-            </div>
+            </button>
 
         </div>
+
+    </div>
+
+</div>
 
     `;
 });
