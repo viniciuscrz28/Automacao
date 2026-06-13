@@ -75,7 +75,7 @@ produtos.forEach(produto => {
 
     <div class="card h-100 shadow-sm">
 
-        <img src="img/produto${produto.id}.jpg"
+        <img src="assets/img/produto${produto.id}.jpg"
             class="card-img-top"
             alt="${produto.nome}"
             style="height: 180px; object-fit: cover;">
