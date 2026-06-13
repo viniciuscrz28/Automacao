@@ -43,34 +43,17 @@ body {
 
     position: fixed;
 
-    top: 70px;
+    top: 56px;
 
     left: 0;
 
     width: 250px;
 
-    height: 100vh;
+    height: calc(100vh - 56px);
 
     background: #1e293b;
 
     color: white;
-}
 
-.sidebar ul {
-
-    list-style: none;
-
-    padding: 20px;
-}
-
-.sidebar li {
-
-    margin: 20px 0;
-}
-
-.sidebar a {
-
-    color: white;
-
-    text-decoration: none;
+    overflow-y: auto;
 }
